@@ -1,3 +1,36 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
 .hidden {
   display: none; }
 
@@ -25,123 +58,48 @@ hr {
   opacity: 0.4; }
 
 .structure {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
   .structure .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 600px; }
     .structure .wrapper .box {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
+      flex: 1;
       min-height: 100px;
       height: 100vh;
       min-width: 25%; }
     .structure .wrapper .box1 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       height: auto; }
     .structure .wrapper .box2 {
       color: white;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       min-height: 500px; }
       .structure .wrapper .box2 h2 {
         font-size: 30px; }
       .structure .wrapper .box2 .contact {
         padding: 5px;
         font-size: 0.75em;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
       .structure .wrapper .box2 .img {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
         .structure .wrapper .box2 .img img {
           max-width: 256px;
           margin: 10px; }
@@ -158,52 +116,29 @@ hr {
       .structure .wrapper .box2 .flickr:hover {
         color: #0063DC; }
     .structure .wrapper .profile {
-      -webkit-box-ordinal-group: 2;
-      -webkit-order: 1;
-          -ms-flex-order: 1;
-              order: 1;
+      order: 1;
       background: url("http://www.fillmurray.com/800/800");
       background-size: cover;
       height: 200px;
       width: 200px;
       border-radius: 100px; }
     .structure .wrapper #headline {
-      -webkit-box-ordinal-group: 3;
-      -webkit-order: 2;
-          -ms-flex-order: 2;
-              order: 2; }
+      order: 2; }
     .structure .wrapper #description {
-      -webkit-box-ordinal-group: 4;
-      -webkit-order: 3;
-          -ms-flex-order: 3;
-              order: 3;
+      order: 3;
       max-width: 500px; }
       .structure .wrapper #description p {
         width: 100%; }
 
 @media (max-width: 800px) {
   .structure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-top: 20px; }
     .structure .wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
+      flex-direction: column;
+      flex-wrap: wrap; }
       .structure .wrapper .box1 {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+        flex-direction: column; }
       .structure .wrapper .profile {
         height: 100px;
         width: 100px;
